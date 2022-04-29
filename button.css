@@ -1,4 +1,12 @@
 
+<<<<<<< HEAD
+=======
+
+*{
+  max-width: 1366px;
+  max-height: 768px;
+}
+>>>>>>> 232d0e6b853f93d304ef9a7671f5e011498da7a0
 #next, #back{
   transition: 0.5s;
 }
@@ -7,8 +15,11 @@
   color: black;
 }
 #addu{
+<<<<<<< HEAD
   border: 1px solid black;
   border-radius: 8px;
+=======
+>>>>>>> 232d0e6b853f93d304ef9a7671f5e011498da7a0
   transition: 0.5s;
   cursor: pointer;
 }
