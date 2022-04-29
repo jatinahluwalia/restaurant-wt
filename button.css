@@ -1,4 +1,8 @@
 
+*{
+  max-width: 1366px;
+  max-height: 768px;
+}
 #next, #back{
   transition: 0.5s;
 }
