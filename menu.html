@@ -1,0 +1,281 @@
+<html>
+
+<head>
+  <link type="text/css" rel="stylesheet" href="button.css">
+  <style type="text/css">
+    @keyframes myanimate1 {
+      0% {
+        opacity: 0;
+        top: 300px;
+        transform: scale(3);
+      }
+
+      50% {
+        opacity: 1;
+        top: 300px;
+        transform: scale(3);
+      }
+
+    }
+
+    @keyframes myanimate {
+      0% {
+        opacity: 0;
+      }
+
+      80% {
+        opacity: 0;
+      }
+    }
+
+    .starters {
+      animation: myanimate 1.25s;
+      border: 1px solid black;
+      position: relative;
+      height: 570px;
+      width: 1200px;
+      top: -30px;
+      background-color: white;
+      font-family: cursive;
+    }
+
+    .vegitems {
+      animation: myanimate 1.25s;
+      position: absolute;
+      left: 270px;
+      top: 180px;
+      font-size: 25px;
+      font-weight: bold;
+
+    }
+
+    .bread {
+      animation: myanimate 1.25s;
+      position: absolute;
+      left: 1000px;
+      top: 350px;
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    h1 {
+      top: 0;
+      position: relative;
+      animation: myanimate1 1s;
+      font-size: 60px;
+      font-family: serif;
+      font-weight: bold;
+      color: white;
+    }
+
+    h2 {
+      animation: myanimate 1.25s;
+      position: absolute;
+      top: 70px;
+      left: 570px;
+      font-size: 40px;
+      color: brown;
+
+    }
+
+    #mylist {
+      animation: myanimate 1.25s;
+      border: 2px solid black;
+      position: absolute;
+      top: 200px;
+      left: 200px;
+      font-size: 20px;
+      font-weight: normal;
+    }
+
+    #nonmylist {
+      animation: myanimate 1.25s;
+      border: 2px solid black;
+      position: absolute;
+      top: 400px;
+      left: 200px;
+      font-size: 20px;
+      font-weight: normal;
+    }
+
+    #rice {
+      animation: myanimate 1.25s;
+      border: 2px solid black;
+      position: absolute;
+      top: 200px;
+      left: 930px;
+      font-size: 20px;
+      font-weight: normal;
+    }
+
+    .maincourse {
+      animation: myanimate 1.25s;
+      position: absolute;
+      top: 180px;
+      left: 610px;
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    .Rice {
+      animation: myanimate 1.25s;
+      position: absolute;
+      top: 180px;
+      left: 930px;
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    #mainlist {
+      animation: myanimate 1.25s;
+      font-size: 20px;
+      background-color: black;
+      color: white;
+      position: absolute;
+      top: 200px;
+      left: 570px;
+    }
+
+    #nonmainlist {
+      animation: myanimate 1.25s;
+      font-size: 20px;
+      background-color: black;
+      color: white;
+      position: absolute;
+      top: 400px;
+      left: 570px;
+    }
+
+    #bbq {
+      animation: myanimate 1.25s;
+      position: absolute;
+      top: 100px;
+      left: 100px;
+      height: 100px;
+
+    }
+
+    #biryani {
+      animation: myanimate 1.25s;
+      position: absolute;
+      top: 250px;
+      left: 1180px;
+      height: 100px;
+    }
+
+    #bread {
+      animation: myanimate 1.25s;
+      position: absolute;
+      top: 370px;
+      left: 930px;
+      border: 2px solid black;
+      font-size: 20px;
+    }
+
+    body {
+
+      background-image: url(starters.jpg);
+      background-size: cover;
+    }
+
+    #next {
+
+      animation: myanimate 1.25s;
+      position: absolute;
+      top: 600px;
+      left: 1090px;
+      font-size: 30px;
+      color: white;
+      background-color: black;
+      font-family: cursive;
+      cursor: pointer;
+
+    }
+  </style>
+  <title>Menu</title>
+</head>
+
+<body>
+  <center>
+    <h1><u>MENU</u></h1>
+    <div class="starters">
+    </div>
+    <h2><u> Indian Cuisine</u> </h2>
+  </center>
+  <div class="vegitems">
+    TANDOORI
+  </div>
+  <ul id="mylist">
+    <li>Paneer Tikka - 249/-</li>
+    <li>Achaari Panner Tikka - 249/-</li>
+    <li>Malai Paneer Tikka - 269/-</li>
+    <li>Soya Chaap Tikka - 249/-</li>
+    <li>Malai Chaap Tikka - 269/-</li>
+    <li>Mushroom Tikka -249/-</li>
+    <li>Tandoori Malai Broccoli - 249/-</li>
+    <li>Veg Platter - 349/-</li>
+  </ul>
+  <ul id="nonmylist">
+    <li>Chicken Tikka - 319/-</li>
+    <li>Achari Chicken Tikka - 329/-</li>
+    <li>Chicken Malai Tikka - 329/-</li>
+    <li>Peri Peri Chicken Tikka - 329/-</li>
+    <li>Chicken Seekh Kabab - 329/-</li>
+    <li>Mutton Seekh Kabab - 339/-</li>
+    <li>Tandoori Chicken - 379/-</li>
+    <li>Afghani Chicken - 389/-</li>
+    <li>Non Veg Tandoori Platter - 399/-</li>
+  </ul>
+  <div class="maincourse">
+    MAIN COURSE
+  </div>
+  <ul id="mainlist">
+    <li>Dal Makhani - 249/-</li>
+    <li>Mix veg - 249/-</li>
+    <li>Shahi Paneer - 279/-</li>
+    <li>Kadhai Paneer - 279/-</li>
+    <li>Paneer Butter Masala - 289/-</li>
+    <li>Paneer Lababdar - 289/-</li>
+    <li>Paneer Tikka Masala - 289/-</li>
+    <li>Mushroom Do Pyaza - 279/-</li>
+  </ul>
+  <ul id="nonmainlist">
+    <li>Chicken Lababdar - 319/-</li>
+    <li>Chicken Tikka Masala - 329/-</li>
+    <li>Butter Chicken - 329/-</li>
+    <li>Kadhai Chicken - 329/-</li>
+    <li>Mutton Rarra - 389/-</li>
+    <li>Mutton Curry - 409/-</li>
+    <li>Mutton Rogan Josh - 429/-</li>
+  </ul>
+  <img src="bbq.jpg" alt="" id="bbq">
+  <img src="biryani.jpg" alt="" id="biryani">
+  <div class="Rice">
+    RICE AND BIRYANI
+  </div>
+  <ul id="rice">
+    <li>Jeera Rice - 149/-</li>
+    <li>Veg Biryani - 199/-</li>
+    <li>Chicken Biryani - 269/-</li>
+    <li>Mutton Biryani - 299/-</li>
+  </ul>
+  <div class="bread">
+    BREADS
+  </div>
+  <ul id=bread>
+    <li>Plain Butter Roti - 30/-</li>
+    <li>Lachha Prantha - 59/-</li>
+    <li>Pudina Prantha - 69/-</li>
+    <li>Green Chilli Prantha - 69/-</li>
+    <li>Aloo Prantha - 49/-</li>
+    <li>Butter Naan - 69/-</li>
+    <li>Stuffed/Garlic Naan - 79/-</li>
+  </ul>
+  <form class="next">
+    <a href="sp.html"><input type="button" name="mybutton" id="next" value="NEXT">
+    </a>
+
+  </form>
+</body>
+
+</html>

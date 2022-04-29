@@ -1,0 +1,12 @@
+
+*{
+  max-width: 1366px;
+  max-height: 768px;
+}
+#next, #back{
+  transition: 0.5s;
+}
+#next:hover, #back:hover{
+  background-color: white;
+  color: black;
+}

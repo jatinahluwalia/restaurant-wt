@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    #jagasingh:hover {
+      background-color: rgb(26, 92, 34);
+    }
+
+    @keyframes myanimate {
+      0% {
+        opacity: 0;
+      }
+    }
+
+    @keyframes myanimate1 {
+      0% {
+        opacity: 0;
+        left: 10%;
+      }
+
+      50% {
+        opacity: 0;
+        left: 10%;
+      }
+    }
+
+    form {
+      position: relative;
+      left: 30%;
+    }
+
+    h1 {
+      animation: myanimate 1s;
+      font-family: monospace;
+      font-size: 50px;
+      text-align: center;
+    }
+
+    #jitu {
+      height: 150px;
+      width: 400px;
+    }
+
+    body {
+      background-image: url(reservetable.jpg);
+      background-size: cover;
+    }
+
+    input {
+      animation: myanimate1 1s;
+      padding: 5px;
+      position: absolute;
+      left: 20%;
+      border-radius: 10px;
+      border: 1px solid black;
+    }
+
+    #jagasingh {
+      transition: 0.5s;
+      cursor: pointer;
+      font-weight: 1000;
+      padding: 20px;
+      position: relative;
+      top: 150px;
+      color: black;
+      background-color: rgb(207, 231, 147);
+    }
+
+    label {
+      animation: myanimate 1s;
+      font-family: sans-serif;
+      font-weight: bold;
+      font-style: italic;
+      font-size: 21px;
+    }
+
+    h1 {
+      color: red;
+    }
+  </style>
+  <title>Table Reservation</title>
+</head>
+
+<body>
+  <h1> TABLE RESERVATION </h1>
+
+  <form>
+    <label for="fname">Full Name: </label>
+    <input type="text" id="fname" name="fname" value=""><br><br><br>
+    <label for="phn">Phone number: </label>
+    <input type="text" id="phn" name="phn" value=""><br><br><br>
+    <label for="number">Number of persons: </label>
+    <input type="number" id="number" name="people" value=""><br><br><br>
+    <label for="datee"> Date: </label>
+    <input type="date" id="datee" name="datee" value=""><br><br><br>
+    <label for="timee">Time: </label>
+    <input type="time" id="timee" name="timee" value=""><br><br><br>
+    <label for="jitu"> Any Comment: </label><br>
+    <input type="" id="jitu" name="comment" value="" height="100" width="100"><br><br>
+    <a href="confirmation.html"> <input type="button" id="jagasingh" name="button" value="CONTINUE" onclick="pp()">
+    </a>
+</body>
+
+</html>

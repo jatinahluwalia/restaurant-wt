@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link type="text/css" rel="stylesheet" href="button.css">
+  <style>
+    * {
+      position: relative;
+      left: -15px;
+    }
+
+    #next,
+    #back {
+      background-color: black;
+      color: white;
+      font-family: cursive;
+      cursor: pointer;
+      font-size: 30px;
+    }
+
+    #back {
+      position: absolute;
+      top: 800px;
+      left: 270px;
+    }
+
+    #next {
+      position: absolute;
+      top: 800px;
+      left: 500px;
+    }
+
+    #red {
+      border: 2px solid black;
+      position: absolute;
+      top: 720px;
+      left: 400px;
+      height: 120px;
+    }
+
+    #white {
+      border: 2px solid black;
+      position: absolute;
+      top: 490px;
+      left: 720px;
+      height: 115px;
+    }
+
+    #simg {
+      position: absolute;
+      top: 150px;
+      left: 1130px;
+      height: 200px;
+      width: 170px;
+    }
+
+    lh {
+      position: relative;
+      top: -30px;
+      font-weight: bold;
+      font-size: 30px;
+      color: brown;
+
+    }
+
+    #addon {
+      position: absolute;
+      top: 570px;
+      left: 880px;
+      font-size: 30px;
+    }
+
+    .pasta {
+      position: absolute;
+      top: 500px;
+      left: 300px;
+      font-size: 20px;
+    }
+
+    h1 {
+      position: absolute;
+      top: 50px;
+      left: 630px;
+      color: brown;
+    }
+
+    body {
+      background-image: url(starters.jpg)
+    }
+
+    dl {
+      position: absolute;
+      top: 130px;
+      left: 250px;
+      font-size: 20px;
+    }
+
+    dt {
+      font-weight: bold;
+    }
+
+    .starters {
+      border: 1px solid black;
+      position: absolute;
+      height: 800px;
+      width: 1200px;
+      top: 50px;
+      left: 100px;
+      background-color: white;
+      font-family: cursive;
+    }
+  </style>
+  <title>Menu</title>
+</head>
+
+<body>
+  <div class="starters">
+  </div>
+  <center>
+    <h1><u>Sandwiches</h1></u>
+    <dl class="sandwiches">
+      <dt>Griiled Cheese Sandwich - 159/-</dt>
+      <dd>(Lettuce,mayo,onion,tomato,sliced cheese,salt and pepper)</dd>
+      <dt>Mexican Panini sandwich - 179/</dt>
+      <dd>(Pan tossed Mexican veggies, Sliced Cheese, cocktail mayo)</dd>
+      <dt>Veg Club Sandwich - 189/-</dt>
+      <dd>(Triple layer bread,lettuce,onion,tomato,sliced cheese,grilled cottage cheese served with cocktail mayo)</dd>
+      <dt>Grilled Chicken Sandwich - 169/-</dt>
+      <dd>(Grilled chicken,lettuce,mayo,sliced cheese,salt and pepeer served with cocktail mayo)</dd>
+      <dt>Ham and Cheese Sandwich - 179/- (Non Veg)</dt>
+      <dd>(2 layer bread, Ham, Lettuce, mayo, Sliced Cheese served with cocktail mayo)</dd>
+      <dt>Chicken Panini Sandwich - 179/</dt>
+      <dd>(Grilled chicken, Toasted Bell Pepper, Cheese Slices served with Cocktail Mayo)</dd>
+      <dt>Chicken Club Sandwich - 189/</dt>
+      <dd>(Triple Layer Bread, Grilled chicken, Lettuce, Egg omelette, Sliced cheese served with Cocktail mayo)</dd>
+    </dl>
+    <ul class="pasta">
+      <lh><u> PASTA</u> </lh>
+      <li>Spaghetti Aglio Olio - 199/-</li>
+      <li>Penne Alfredo Pasta - 225/-(Veg)</li>
+      <li>Penne Arrabiata Pasta - 225/-</li>
+      <li>Mix Sauce Pasta - 229/-</li>
+      <li>Penne Basil Pasto Pasta - 229/-</li>
+      <li>Peri Peri Pasta - 225/-
+        (Veg/Non Veg)</li>
+    </ul>
+    <ul id="addon">
+      <lh><u>ADD ON</u></lh>
+      <li>Baked - 45/-</li>
+      <li>Extra cheese - 50/-</li>
+      <li>Extra Chicken - 50/-</li>
+    </ul>
+    <img src="sandwich.jpg" id="simg" alt="">
+    <img src="pasta.jpg" id="red" alt="">
+    <img src="whitesaucepasta.jpg" id="white" alt="">
+    <form class="myform">
+      <a href="drinks.html"><input type="button" name="next" id="next" value="NEXT"></a>
+      <a href="menu.html"><input type="button" name="back" id="back" value="BACK"></a>
+    </form>
+</body>
+
+</html>

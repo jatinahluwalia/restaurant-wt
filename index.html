@@ -1,0 +1,167 @@
+<html>
+
+<head>
+  <style>
+    @keyframes myanimate {
+      0% {
+        top: 10%;
+        opacity: 0;
+      }
+
+      50% {
+        top: 13%;
+        opacity: 0;
+      }
+
+    }
+
+    @keyframes myanimate1 {
+      0% {
+        top: 1%;
+        opacity: 0;
+      }
+    }
+
+    @keyframes myanimate3 {
+      0% {
+        opacity: 0;
+      }
+
+      66.67% {
+        opacity: 0;
+      }
+    }
+
+    body {
+      background-image: url("bg 1st.jpg");
+      background-size: cover;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .welcome {
+      animation: myanimate1 0.5s;
+      font-weight: 1000;
+      font-family: sans-serif;
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 20px;
+      color: rgb(0, 217, 255);
+      padding-right: 10px;
+      padding-left: 10px;
+      border-radius: 35px;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    }
+
+    .name {
+      animation: myanimate 1s;
+      letter-spacing: 5px;
+      padding-right: 10px;
+      padding-left: 10px;
+      border-radius: 35px;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0));
+      position: absolute;
+      top: 18%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 80px;
+      font-weight: bold;
+      font-family: "Showcard Gothic", sans-serif;
+      color: rgb(162, 238, 21);
+    }
+
+    a {
+      border-radius: 10px;
+      text-decoration: none;
+      font-family: sans-serif;
+      font-weight: 1000;
+      background-color: white;
+      padding: 10px;
+      color: black;
+      cursor: pointer;
+    }
+
+    .menu,
+    .reserve {
+      animation: myanimate3 1.5s;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .menu {
+      display: flex;
+      top: 45%;
+    }
+
+    .reserve {
+      top: 60%;
+    }
+
+    #menu_img {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      top: -100%;
+      left: 100%;
+      height: 250%;
+      transition: 0.5s;
+    }
+
+    #reserve_img {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      top: -180%;
+      left: 100%;
+      height: 400%;
+      transition: 0.5s;
+    }
+
+    .menu:hover #menu_img {
+      visibility: visible;
+      transform: scale(2);
+      opacity: 1;
+      left: 300%;
+    }
+
+    .reserve:hover #reserve_img {
+      visibility: visible;
+      transform: scale(2);
+      opacity: 1;
+      left: 160%;
+    }
+
+    a:hover {
+
+      border: 2px solid black;
+    }
+  </style>
+  <title> Green House </title>
+</head>
+
+<body>
+  <div class="welcome"><i>WELCOME TO </i></div>
+  <div class="name"> GREEN HOUSE </div><br>
+  <div class="menu">
+    <a href="menu.html" target="_blank">MENU</a>
+    <div class="menu_img">
+      <img src="menu.png" alt="" id="menu_img">
+
+    </div>
+  </div>
+  <div class="reserve">
+    <a href="reserve.html" target="_blank">RESERVE A TABLE</a>
+    <div class="reserve_img">
+      <img src="reserve.png" alt="" id="reserve_img">
+
+    </div>
+  </div>
+</body>
+
+</html>
