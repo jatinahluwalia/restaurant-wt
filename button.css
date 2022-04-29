@@ -10,3 +10,9 @@
   background-color: white;
   color: black;
 }
+#addu{
+  cursor: pointer;
+}
+#addu:hover{
+  background: rgb(217, 125, 194);
+}
