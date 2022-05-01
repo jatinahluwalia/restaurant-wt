@@ -10,7 +10,46 @@
       color: white;
       font-family: inherit;
     }
+    .header {
+            display: flex;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 20%;
+            width: 100%;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+        }
 
+        .items {
+            animation: positionanimate 500ms ease-in-out, opacityanimate 1s ease-in-out;
+            cursor: pointer;
+            transform: translateY(-50%);
+            position: absolute;
+            top: 50%;
+            font-family: "Arial";
+            font-size: 20px;
+            letter-spacing: 3px;
+        }
+
+        .menu {
+            left: 10%;
+        }
+
+        .reserve {
+            left: 20%;
+        }
+
+        .about {
+            right: 10%;
+        }
+
+        .contact {
+            right: 20%;
+        }
+
+        .items:hover a{
+            color: white;
+        }
     h1 {
       font-size: 100px;
       font-family: fantasy;
@@ -34,6 +73,12 @@
 </head>
 
 <body>
+  <div class="header">
+    <div class="items menu"><a href="menu.html">MENU</a></div>
+    <div class="items reserve"><a href="reserve.html">RESERVE A TABLE</a></div>
+    <div class="items about"><a href="about.html">ABOUT</a></div>
+    <div class="items contact"><a href="#">CONTACT US</a></div>
+</div>
   <center>
     <h1><i><u>CONGRATULATIONS!</u></i></h1>
     <h2> You have been reserved. </h2><br><br>
