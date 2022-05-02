@@ -15,10 +15,11 @@
             background-blend-mode: multiply;
         }
 
-        a{
+        a {
             text-decoration: none;
-            color:rgba(255, 255, 255, 0.7)
+            color: rgba(255, 255, 255, 0.7)
         }
+
         @keyframes opacityanimate {
             0% {
                 opacity: 0;
@@ -53,6 +54,8 @@
             font-family: "Arial";
             font-size: 20px;
             letter-spacing: 3px;
+            color: rgba(255, 255, 255, 0.7);
+            transition: 250ms;
         }
 
         .menu {
@@ -67,12 +70,32 @@
             right: 10%;
         }
 
-        .contact {
+        .home {
             right: 20%;
+            color: white;
         }
 
-        .items:hover a{
+        .homeunderline {
+            position: absolute;
+            transform: translateY(-50%);
+            top: 63%;
+            right: 20.2%;
+            width: 4.4%;
+            height: 1.5%;
+            transition: 250ms;
+        }
+
+        .items:hover a {
             color: white;
+        }
+
+        .items:hover {
+            font-size: 22px;
+            ;
+        }
+
+        .home:hover~.homeunderline {
+            width: 4.7%;
         }
 
         .name {
@@ -96,7 +119,8 @@
         <div class="items menu"><a href="menu.html">MENU</a></div>
         <div class="items reserve"><a href="reserve.html">RESERVE A TABLE</a></div>
         <div class="items about"><a href="about.html">ABOUT</a></div>
-        <div class="items contact"><a href="#">CONTACT US</a></div>
+        <div class="items home">HOME</div>
+        <div class="homeunderline" style="background: white;"></div>
     </div>
 </body>
 

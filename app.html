@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Menu</title>
+  <style type="text/css">
+    #next,
+    #back {
+      background-color: black;
+      color: white;
+      font-family: cursive;
+      cursor: pointer;
+      font-size: 30px;
+      transition: 0.5s;
+    }
+
+    #next:hover,
+    #back:hover {
+      background-color: white;
+      color: black;
+    }
+
+    #back {
+      position: absolute;
+      top: 93%;
+      left: 70%;
+    }
+
+    #next {
+      position: absolute;
+      top: 93%;
+      left: 80%;
+    }
+
+    img {
+      height: 15%;
+      width: 10%;
+    }
+
+    #rolls {
+      position: absolute;
+      top: 20%;
+      left: 20%;
+    }
+
+    #wings {
+      position: absolute;
+      top: 20%;
+      left: 75%;
+    }
+
+    #bbqchii {
+      position: absolute;
+      top: 75%;
+      left: 75%;
+    }
+
+    #garlic {
+      position: absolute;
+      top: 60%;
+      left: 20%;
+    }
+
+    dt {
+      font-weight: bold;
+    }
+
+    .appe {
+      font-size: 20px;
+    }
+
+    h1 {
+      color: brown;
+    }
+
+    .starters {
+      border: 10% solid black;
+      position: absolute;
+      height: 98%;
+      width: 87%;
+      top: 3%;
+      left: 7%;
+      background-color: white;
+      font-family: cursive;
+      z-index: -2;
+    }
+
+    body {
+      background-image: url(starters.jpg)
+    }
+  </style>
+</head>
+
+<body>
+  <div class="starters"> </div>
+  <center>
+    <h1><u>Appetizers</u></h1>
+    <div class="appe">
+      <dl>
+        <dt>Mushroom Cheese Cigar Roll - 179/-</dt>
+        <dd>(cheese,Sauteed mushroom toppedwith bell peppers)</dd>
+        <dt>Falafel with Hummus Pita - 159/-</dt>
+        <dd>(Falafel patty,pita bread,Hummus,tzatziki,salad )</dd>
+        <dt>Falafel Pita Bites - 159/-</dt>
+        <dd>(pita breads,falafel patty,hummus served with salsa sour cream)</dd>
+        <dt>CheeseStuffed Mushroom - 179/- (Veg)</dt>
+        <dd>(mozzarella cheese,sauteed mushroom,chopped bell peppers)</dd>
+        <dt>Baked Cheese Nachos (Veg/Non Veg) - 189/259/-</dt>
+        <dd>(Jalapeno,nachos,bell peppers,olives,corn,cheese)</dd>
+        <dt>Veg Mexican Quesadilla - 209/-</dt>
+        <dd>(pan tossed sauteed mexican veggies,cheeseservedwithsalsa & sour cream)</dd>
+        <dt>Mexican Wrap - 199/-</dt>
+        <dd>(Tossed bell pepper,corns,olives,onion,kidney beans,cheese)</dd>
+        <dt>Cheesy Gralic Bread - 129/-</dt>
+        <dt>Jalapeno Cheese Balls - 139/- (Veg)</dt>
+        <dd>(mozzarella cheese,chopped Jalapeno)</dd>
+        <dt>Chicken Wings Peri Peri - 269/- (Non Veg)</dt>
+        <dd>(Fried chicken wings served with peri peri sauce)</dd>
+        <dt>Barbeque Chicken Wings - 269/-</dt>
+        <dd>(Fried chicken wings served with barbeque sauce)</dd>
+        <dt>Chicken Skewers - 259/-</dt>
+        <dd>(Supreme chicken on satte sticks served with peanut butter sauce)</dd>
+      </dl>
+    </div>
+  </center>
+  <img src="rolls.jpg" id="rolls" alt="error">
+  <img src="garlic.jpg" id="garlic" alt="error">
+  <img src="wings.jpg" id="wings" alt="error">
+  <img src="bbqchii.jpg" id="bbqchii" alt="error">
+  <form class="myform">
+    <a href="cmc.html"><input type="button" name="next" id="next" value="NEXT"></a>
+    <a href="drinks.html"><input type="button" name="back" id="back" value="BACK"></a>
+</body>
+
+</html>
