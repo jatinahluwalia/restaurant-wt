@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style type="text/css">
+        @keyframes zomswiggy {
+            0% {
+                opacity: 0.5;
+            }
+            50%{
+                opacity: 1;
+            }
+            100%{
+                opacity: 0.5;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            display: flex;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 20%;
+            width: 100%;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+        }
+
+        a {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .items {
+            cursor: pointer;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            top: 50%;
+            font-family: "Arial";
+            font-size: 20px;
+            letter-spacing: 3px;
+            color: rgba(255, 255, 255, 0.7);
+            transition: 250ms;
+        }
+
+        .home {
+            left: 50%;
+        }
+
+        .items:hover a {
+            color: white;
+        }
+
+        .items:hover {
+            font-size: 22px;
+        }
+
+
+        body {
+            background: url("bg 1st.jpg");
+            background-size: cover;
+            background-color: rgba(0, 0, 0, 0.329);
+            background-blend-mode: multiply;
+        }
+
+        .text {
+            transform: translate(-50%, -50%);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: white;
+        }
+
+        .thanking {
+            white-space: nowrap;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            font-size: 6rem;
+            font-weight: 900;
+        }
+
+        .hope {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-size: 1.5rem;
+        }
+        .order{
+            position: absolute;
+            top: 61%;
+            left: 50%;
+            font-size: 1.5rem;
+            letter-spacing: 4px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        .zom{
+            animation: zomswiggy 2s infinite;
+            display: flex;
+            overflow: hidden;
+            cursor: pointer;
+            position: absolute;
+            left: 20%;
+            top: 70%;
+            width: 10%;
+            height: 10%;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        #zom{
+            position: absolute;
+            transform: translate(-50%,-50%);
+            top: 50%;
+            left: 50%;
+            height: 60%;
+            border-radius: 10px;
+        }
+        .swiggy{
+            animation: zomswiggy 2s infinite;
+            display: flex;
+            overflow: hidden;
+            cursor: pointer;
+            position: absolute;
+            right: 20%;
+            top: 70%;
+            width: 10%;
+            height: 10%;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        #swiggy{
+            position: absolute;
+            transform: translate(-50%,-50%);
+            top: 50%;
+            left: 50%;
+            height: 70%;
+        }
+    </style>
+    <title>Thank You!</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="items home"><a href="index.html">HOME</a></div>
+    </div>
+    <div class="text thanking">
+        Thank you for choosing us!
+    </div>
+    <div class="text hope">
+        Hope to see you again :)
+    </div>
+    <div class="text order">
+        ORDER ON:
+    </div>
+    <div class="zom">
+        <img src="zomato.png" alt="Error" id="zom">
+    </div>
+    <div class="swiggy">
+        <img src="swiggy.png" alt="Error" id="swiggy">
+    </div>
+</body>
+
+</html>
