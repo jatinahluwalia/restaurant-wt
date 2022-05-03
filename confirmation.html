@@ -1,16 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <link rel="stylesheet" href="button.css">
-  <style type="text/css">
-    #addu {
-      font-size: 40px;
-      background-color: magenta;
-      color: white;
-      font-family: inherit;
-    }
-    .header {
+    <style type="text/css">
+        @keyframes zomswiggy {
+            0% {
+                opacity: 0.5;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0.5;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
             display: flex;
             position: absolute;
             top: 0;
@@ -20,74 +32,80 @@
             background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
         }
 
+        a {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
         .items {
-            animation: positionanimate 500ms ease-in-out, opacityanimate 1s ease-in-out;
             cursor: pointer;
-            transform: translateY(-50%);
+            transform: translate(-50%, -50%);
             position: absolute;
             top: 50%;
             font-family: "Arial";
             font-size: 20px;
             letter-spacing: 3px;
+            color: rgba(255, 255, 255, 0.7);
+            transition: 250ms;
         }
 
-        .menu {
-            left: 10%;
+        .home {
+            left: 50%;
         }
 
-        .reserve {
-            left: 20%;
-        }
-
-        .about {
-            right: 10%;
-        }
-
-        .contact {
-            right: 20%;
-        }
-
-        .items:hover a{
+        .items:hover a {
             color: white;
         }
-    h1 {
-      font-size: 100px;
-      font-family: fantasy;
-      color: orange;
-    }
 
-    h2 {
-      font-size: 50px;
-      font-family: cursive;
-      color: red;
-    }
+        .items:hover {
+            font-size: 22px;
+        }
 
-    body {
-      background-image: url(congo.gif);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-  </style>
-  <title> Confirmation</title>
+
+        body {
+            background: url("bg 1st.jpg");
+            background-size: cover;
+            background-color: rgba(0, 0, 0, 0.329);
+            background-blend-mode: multiply;
+        }
+
+        .text {
+            transform: translate(-50%, -50%);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: white;
+        }
+
+        .congo {
+            white-space: nowrap;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            font-size: 6rem;
+            font-weight: 900;
+        }
+
+        .reserved {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-size: 1.5rem;
+        }
+    </style>
+    <title>Thank You!</title>
 </head>
 
 <body>
-  <div class="header">
-    <div class="items menu"><a href="menu.html">MENU</a></div>
-    <div class="items reserve"><a href="reserve.html">RESERVE A TABLE</a></div>
-    <div class="items about"><a href="about.html">ABOUT</a></div>
-    <div class="items contact"><a href="#">CONTACT US</a></div>
-</div>
-  <center>
-    <h1><i><u>CONGRATULATIONS!</u></i></h1>
-    <h2> You have been reserved. </h2><br><br>
-    <form>
-      <a href="index.html"><input type="button" id="addu" name="home" value="HOME">
-      </a>
-    </form>
-  </center>
-
+    <div class="header">
+        <div class="items home"><a href="index.html">HOME</a></div>
+    </div>
+    <div class="text congo" id="congo">
+        Congratulations
+    </div>
+    <div class="text reserved">
+        Your table has been reserved.
+    </div>
+    <script type="text/javascript" src="confirm.js">
+    </script>
 </body>
 
 </html>

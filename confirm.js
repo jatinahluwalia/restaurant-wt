@@ -1,0 +1,1 @@
+document.getElementById("congo").innerText += " " + localStorage.getItem("myname");
