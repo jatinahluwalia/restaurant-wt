@@ -90,11 +90,28 @@
             left: 50%;
             font-size: 1.5rem;
         }
+        #details{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            transform: translateX(-50%);
+            left: 50%;
+            top: 60%;
+            height: 200px;
+            width: 300px;
+            background: rgba(0, 0, 0, 0.329);
+            border-radius: 10px;
+            font-size: 1.5rem;
+            color: rgba(255, 255, 255, 0.7);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding: 10px;
+        }
     </style>
     <title>Thank You!</title>
 </head>
 
-<body>
+<body onload="myfn()">
     <div class="header">
         <div class="items home"><a href="index.html">HOME</a></div>
     </div>
@@ -103,6 +120,8 @@
     </div>
     <div class="text reserved">
         Your table has been reserved.
+    </div>
+    <div id="details">
     </div>
     <script type="text/javascript" src="confirm.js">
     </script>
