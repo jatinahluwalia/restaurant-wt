@@ -9,6 +9,4 @@ function myfn() {
     localStorage.setItem("mydate", date)
     localStorage.setItem("mypersons", persons);
     localStorage.setItem("mytime", time);
-
-
 }
